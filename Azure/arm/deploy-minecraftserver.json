@@ -177,6 +177,31 @@
           }
         }
       }
+    },
+    {
+      "name": "[concat(variables('virtualMachineName'), '/installserverext')]",
+      "type": "Microsoft.Compute/virtualMachines/extensions",
+      "location": "[resourceGroup().location]",
+      "apiVersion": "2015-06-15",
+      "dependsOn": [
+        "[resourceId('Microsoft.Compute/virtualMachines/',variables('virtualMachineName'))]"
+      ],
+      "tags": {
+        "displayName": "config-app"
+      },
+      "properties": {
+        "publisher": "Microsoft.Azure.Extensions",
+        "type": "CustomScript",
+        "typeHandlerVersion": "2.0",
+        "autoUpgradeMinorVersion": true,
+        "settings": {
+          "skipDos2Unix":false,
+          "timestamp":123456789
+        },
+        "protectedSettings": {
+           "script": "H4sIABHo4VwCA21RXY+bMBB8969wXV7txSiBUCmVoiZ3assdVfr1iIy9JHDERGC46H59ySVVk/Se7NXOjGZm37+DvLSQq25Lviy/Zsv092OSLpbZz3UyZ1vn9t0HANM827pRRlRqUMKig+MH7hdQmScZCF9ICGNdoJwG/kyFkyiIZkrGWPhx7COqMJYgA7j/lkCzRzuy+ImW1aXtD/wQTrLRh3CqFZsX9mrlLk2Wq3X2uHhYzdk/BiPPG3SUp/TogVcj48Si3m0AsnsyZUv5nkLftVCXOVTDjoxwyl8OxX8C/NM1sN8b5ZCr2mFrlSsH7Cjnpe2cqmvKXrHH9o46jLLzcykB3k2SC7wkhLxdd616q7fYil1TKbsRutnBIKHJK9SuAzRRaKZxpCYTPQ3CMMdARYU2UaRmQeQXsvBzLeUMOmyHUWVMyMj31frX6OHuc7I6NfrGcp2mP+bsTGPkXJ93sSXaXM9/b+Hd6FPv6hCotw1l2Ndq7toeGf14moQ7OEb+AMWb7jqFAgAA"
+        }
+      }
     }
   ],
   "outputs": {}
