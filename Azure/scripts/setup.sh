@@ -9,7 +9,7 @@ tar -zxf java-jar.tar.gz -C /usr/lib/jvm
 update-alternatives --install "/usr/bin/java" "java" "/usr/lib/jvm/$jdk_folder/bin/java" 1
 
 # Install Server
-server_jar_url="https://launcher.mojang.com/v1/objects/ed76d597a44c5266be2a7fcd77a8270f1f0bc118/server.jar"
+server_jar_url=`python get_latest_mc_server_url.py`
 minecraft_server_path="/server"
 server_jar="server.jar"
 owner_username="bcpmax"
