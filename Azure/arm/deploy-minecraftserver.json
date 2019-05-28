@@ -269,11 +269,12 @@
         "typeHandlerVersion": "2.0",
         "autoUpgradeMinorVersion": true,
         "settings": {
-          "skipDos2Unix":false,
-          "timestamp":123456789
-        },
-        "protectedSettings": {
-           "script": "H4sIAEQE4lwCA6VUa2/bNhT9rl9xpzrwhkGmpTl+dFCBbCm6bPUWtOg2oCkMmrqSaVOkQFKOkq7/vaQsL06TbEiqL3zo3HMvz308+4YsuSRLalZB8AzOpLFUCPiVbmmwzjaLWos0XFlbmeeEZOpSCkWzwdr9Hki0xG/IqxPioHEyGA5iMp6xHOPjZDil49EkmUxpPMN8OJsNEel4FpM4Ia/OXxNVoXRW0c5sIbism6gZjxYunIGlelBch20EuRIZ6jS8AYfBZYEWoj/Au4/WDrwzgF4XclBuMq4hqoDURhPBl2S9LQOHgui6ye/YRT/fBtZVRi1GVFjUklq+RQNRxDtxwhbrZfM8IYTdckhBejexH0DjQ5Hfot6iDky7LFw4t9UWtJZshXpQqjWVxYCpkmxjopZrZNYQzCbj7Hg2oaMRO07G4yUmdJKzbDKh02QyzON8uGRxPCU7fpczHQYll8g0ze2i81pRu0rDDhMexJKGh3Yu8e66Nl6OEtNwyaqSNqF/Dc3WtbFQYqn0FdSGFggZuuxmXBagJPw5B8OvMbDKvXqOZdr7NteIEJXwD9DLDfSJu31O4CNUmksLvQQ+9b8LeA7vobe3gkhYSIajKXz4EewKZQDu23k9EUIxk8bFl3dNmhQBCoN3wck94FER5Dzoiqd3r1YByx76sy/K3o2Ih/u2Lp1eTKOrLf8EwFpQyLnw2tRs9QAx8bCBbWyAbKWg74+p1TX24cWL/7W58UjBAzjbeyNoGTFXxmKZdSv5lyzqsr83aTOTQ//9O8nthwt5ioZpXlmuZDrfG7UV7dAX8iR3nZNqFjldqdizXMg25Kc57rid77+U3rjaOuXaNYLLXnpkPPP9SjzZ4csG2Vs3H2x6q90h+rs0R8YvjV98lo8McVupiprvAjkotFun5qEgD2vmawJ+g34+p220G+5mTPTLu3PozU/Ofj8/O72Qv7m7ucowrbRiaJxub9C0j1QyyikXtf66LHWzzWeJSovZT1dpWQvLIz87/Lh1TeLKQ3Bq0ofYHu+erUqVwffN46xcaxjXsj4yN3kwR43SiQJcQod0KlWoLUfz3x16F74XJON5zplT4CqNO2EfzSFwiyJqB++l0iJra+yHJ1EV1Fejy/+wJRk9imSnJ7MC2pKBL4UNPgPS7y4WTQgAAA=="
+          "timestamp": 2,
+          "fileUris": [
+            "https://raw.githubusercontent.com/brandonPurvis/CloudMinecraftServer/master/Azure/scripts/get_latest_mc_server_url.py",
+            "https://raw.githubusercontent.com/brandonPurvis/CloudMinecraftServer/master/Azure/scripts/setup.sh"
+          ],
+          "commandToExecute": "sh setup.sh"
         }
       }
     }
